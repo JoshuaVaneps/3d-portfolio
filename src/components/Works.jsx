@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Works = () => {
-  return (
-    <div>Works</div>
-  )
-}
+  return <div>Portfolio</div>;
+};
 
-export default Works
+export default Works;
