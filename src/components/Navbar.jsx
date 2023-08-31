@@ -6,8 +6,8 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState(""); // State to track active section
+  const [toggle, setToggle] = useState(false); // State for mobile menu toggle
 
   return (
     <nav
@@ -19,8 +19,7 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2"
           onClick={() => {
-            // this is keeping track of where we are on the page
-            setActive("");
+            setActive(""); // Clear active section when clicking on logo/name
             window.scrollTo(0, 0); //scrolls to top of page
           }}
         >
@@ -31,6 +30,8 @@ const Navbar = () => {
             <span className="sm:block hidden">| Full Stack</span>
           </p>
         </Link>
+
+        {/* Desktop navigation links */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {/* were using map to make a linked dynamic nav list of our main sections */}
           {navLinks.map((Link) => (
@@ -40,24 +41,29 @@ const Navbar = () => {
               className={`${
                 active === Link.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer text-center `}
-              onClick={() => setActive(Link.title)}
+              onClick={() => setActive(Link.title)} // Set active section on click
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
             </li>
           ))}
         </ul>
+        {/* Mobile menu */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
+          {/* Menu icon that toggles mobile menu */}
           <img
             src={toggle ? close : menu}
             alt="menu"
             className="menu w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle(!toggle)}
+            onClick={() => setToggle(!toggle)} // Toggle mobile menu
           />
+
+          {/* Mobile menu content */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6 absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl bg-gradient-to-r from-green-400 to-blue-500`}
           >
+            {/* Mobile navigation links */}
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {/* were using map to make a linked dynamic nav list of our main sections */}
               {navLinks.map((Link) => (
@@ -68,8 +74,8 @@ const Navbar = () => {
                     active === Link.title ? "text-white" : "text-secondary"
                   }font-poppins font-medium cursor-pointer text-[16px] bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  `}
                   onClick={() => {
-                    setToggle(!toggle);
-                    setActive(Link.title);
+                    setToggle(!toggle); // Close mobile menu
+                    setActive(Link.title); // Set active section
                   }}
                 >
                   <a href={`#${Link.id}`}>{Link.title}</a>

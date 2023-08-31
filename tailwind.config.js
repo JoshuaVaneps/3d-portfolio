@@ -22,6 +22,7 @@ export default {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern2": "url('/src/assets/jherobg.png')",
       },
     },
   },
