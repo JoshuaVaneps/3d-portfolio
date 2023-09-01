@@ -8,6 +8,10 @@ export default {
     extend: {
       colors: {
         primary: "#050816",
+        superPrimary: "#054895",
+        superPrimaryDark: "#0B3768",
+        superPrimaryLight: "#0251B6",
+        superSecondary: "#D03D56",
         secondary: "#aaa6c3",
         tertiary: "#151030",
         "black-100": "#100d25",
@@ -23,6 +27,8 @@ export default {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
         "hero-pattern2": "url('/src/assets/jherobg.png')",
+        "hero-pattern3": "url('/src/assets/hero-swirl.png')",
+        "hero-pattern4": "url('/src/assets/bhero.png')",
       },
     },
   },

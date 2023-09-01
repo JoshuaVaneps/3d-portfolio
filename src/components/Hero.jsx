@@ -10,13 +10,13 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           {/* the red dot */}
-          <div className="w-5 h-5 rounded-full bg-[#D03D56] " />
+          <div className="w-5 h-5 rounded-full bg-superSecondary " />
           {/* the line coming down */}
-          <div className="w-1 sm:h-80 h-40 bg-gradient-to-r from-[#D03D56]" />
+          <div className="w-1 sm:h-80 h-40 bg-gradient-to-r from-superSecondary" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white `}>
-            Hi, I'm <span className="text-[#D03D56]">Joshua</span>
+            Hi, I'm <span className="text-superSecondary">Joshua</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             A experienced Full Stack Developer specialized in MERN stack, with a
@@ -27,6 +27,21 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
+      <div className="absolute xs:bottom-10 bottomn-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.dev
+              animate={{ y: [0, 24, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            />
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
