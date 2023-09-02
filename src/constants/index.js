@@ -24,6 +24,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  webDesign,
+  reactDeveloper,
+  fullstackDeveloper,
+  goodSalt,
+  reyes,
 } from "../assets";
 
 export const navLinks = [
@@ -48,15 +53,15 @@ export const navLinks = [
 const services = [
   {
     title: "Web Designer",
-    icon: web,
+    icon: webDesign,
   },
   {
     title: "React Developer",
-    icon: mobile,
+    icon: reactDeveloper,
   },
   {
     title: "Full Stack Developer",
-    icon: backend,
+    icon: fullstackDeveloper,
   },
   {
     title: "Content Creator",
@@ -125,55 +130,31 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Lead Software Developer",
+    company_name: "Good Salt Restaurant Group",
+    icon: goodSalt,
+    iconBg: "#B6CECE",
+    date: "Jul 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led development of an innovative MERN-based employee portal, reducing retrieval time by 50% and streamlining workflow efficiency.",
+      "Managed database, routes, and UI/UX design for an intuitive web application.",
+      "Designed highly efficient employee portal for streamlined inventory access.",
+      "Delivered 4 robust function applications on schedule with client commendations.",
+      "Improved user engagement by 30% through UI/UX design and automated testing.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Service Team Lead and Tech Specialist",
+    company_name: "Reyes Mezcaleria",
+    icon: reyes,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2018 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led high-performing team, achieving exceptional service and 30% faster on-boarding.",
+      "Implemented inventory courses and sales classes, boosting customer satisfaction and repeat business.",
+      "Optimized website, increasing traffic by 40% and improving user experience.",
+      "Achieved 99% website up time and reduced update turnaround by 30% as head of IT operations.",
+      "Enhanced user experience, increasing traffic by 40% and reducing bounce rate by 20%.",
     ],
   },
 ];

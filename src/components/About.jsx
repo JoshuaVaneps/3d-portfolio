@@ -15,7 +15,7 @@ const ServiceCard = ({ index, title, icon }) => {
         // giving it simple fade in animation direction, type, delay, and duration
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         // stylizing our card
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full super-gradient p-[1px] rounded-[20px] shadow-card"
       >
         {/* this specifically will control how our objects tilt around mouse */}
         <div
@@ -24,7 +24,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary/80 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img
             src={icon}

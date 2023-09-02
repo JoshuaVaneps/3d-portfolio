@@ -35,7 +35,7 @@ const Computers = ({ isMobile }) => {
         object={computer.scene}
         scale={isMobile ? 0.05 : 0.065}
         // correspond to the object's position on the horizontal axis (left-right), vertical axis (up-down), and depth axis (forward-backward), respectively.
-        position={isMobile ? [0.6, -2.2, -2.2] : [0.5, -3.25, -1.5]}
+        position={isMobile ? [0.6, -3, -2.2] : [0.5, -3.25, -1.5]}
         // represents the rotation of the object (your computer model) around its x, y, and z axes:
         rotation={[-0.0, -0.2, 0.0]}
       />

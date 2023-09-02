@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import joshResume from "./Joshua-Vaneps-Resume.pdf";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -27,10 +28,25 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import reyes from "./company/r-logo.png";
+import goodSalt from "./company/gs-logo.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import contact from "./sidebar/contact.svg";
+import home from "./sidebar/home.svg";
+import linkedin from "./sidebar/linkedin.svg";
+import portfolio from "./sidebar/portfolio.svg";
+import resume from "./sidebar/resume.svg";
+import control from "./sidebar/sidebar-control.png";
+import logoExample from "./sidebar/sidebar-logo-example.png";
+
+import fullstackDeveloper from "./icons/fullstack-developer.png";
+import reactDeveloper from "./icons/react-developer.png";
+import webDesign from "./icons/web-design.png";
+import download from "./icons/download-button.png";
 
 export {
   logo,
@@ -60,7 +76,21 @@ export {
   shopify,
   starbucks,
   tesla,
+  reyes,
+  goodSalt,
   carrent,
   jobit,
   tripguide,
+  logoExample,
+  control,
+  resume,
+  portfolio,
+  linkedin,
+  home,
+  contact,
+  fullstackDeveloper,
+  reactDeveloper,
+  webDesign,
+  download,
+  joshResume,
 };
