@@ -14,7 +14,7 @@ import { download, joshResume } from "../assets";
 
 const handleClick = () => {
   // Replace 'your-pdf-file.pdf' with the actual URL or path to your PDF file
-  const pdfUrl =   joshResume;
+  const pdfUrl = joshResume;
 
   // Open the PDF in a new tab or window
   window.open(pdfUrl, "_blank");

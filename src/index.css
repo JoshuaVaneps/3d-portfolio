@@ -50,10 +50,35 @@
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
+
+.green-pink-text-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(
+    -90.13deg,
+    #00cea8 1.9%,
+    #bf61ff 97.5%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .super-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #0251b6 1.9%, #d03d56 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #0251b6 1.9%, #d03d56 97.5%);
+}
+
+.super-text-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #0251b6 1.9%, #d03d56 97.5%);
+  background: -webkit-linear-gradient(
+    -90.13deg,
+    #0251b6 1.9%,
+    #d03d56 97.5%
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .orange-text-gradient {

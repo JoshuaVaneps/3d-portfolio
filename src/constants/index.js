@@ -27,8 +27,16 @@ import {
   webDesign,
   reactDeveloper,
   fullstackDeveloper,
+  robot,
+  thinking,
   goodSalt,
   reyes,
+  dayplanner,
+  weatherknight,
+  funquiz,
+  budgetbuddy,
+  mezcalbook,
+  passwordgen,
 } from "../assets";
 
 export const navLinks = [
@@ -61,11 +69,11 @@ const services = [
   },
   {
     title: "Full Stack Developer",
-    icon: fullstackDeveloper,
+    icon: robot,
   },
   {
     title: "Content Creator",
-    icon: creator,
+    icon: thinking,
   },
 ];
 
@@ -187,68 +195,217 @@ const testimonials = [
 ];
 
 const projects = [
+  // {
+  //   name: "Car Rent",
+  //   description:
+  //     "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "tailwind",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: carrent,
+  //   source_code_link: "https://github.com/",
+  // },
+  // {
+  //   name: "Job IT",
+  //   description:
+  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "restapi",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "scss",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: jobit,
+  //   source_code_link: "https://github.com/",
+  // },
+  // {
+  //   name: "Trip Guide",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/",
+  // },
   {
-    name: "Car Rent",
+    name: "Weather Knight",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Weather Knight is a fun interactive weather dashboard that utilizes the Open Weather API to provide accurate and detailed weather information to its users. It is completely responsive on the web and mobile and is a blast to use.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "javascript",
+        color: "orange-text-gradient",
       },
       {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "API's",
+        color: "green-pink-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: weatherknight,
+    source_code_link: "https://github.com/joshuavaneps/weather-knight",
+    deployed_site_link: "https://joshuavaneps.github.io/weather-knight/",
+  },
+  {
+    name: "Budget Buddy",
+    description:
+      "Budget Buddy is a place where everyone will be presented with the opportunity to understand the financial implications of their chosen location and can confidently navigate their financial journey, creating a solid foundation for a secure future.",
+    tags: [
+      {
+        name: "API's",
+        color: "green-pink-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: budgetbuddy,
+    source_code_link: "https://github.com/mambrocio/group-COL",
+    deployed_site_link: "https://mambrocio.github.io/group-COL/",
+  },
+  {
+    name: "Mezcal Information Guide",
+    description:
+      "A web-based application designed to facilitate employee access to an extensive database containing comprehensive information about mezcal spirits within a restaurant setting.",
+    tags: [
+      {
+        name: "handlebars",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+    ],
+    image: mezcalbook,
+    source_code_link: "https://github.com/JoshuaVaneps/Mezcal-Book",
+    deployed_site_link: "https://mezcal-book-580ae53d198b.herokuapp.com/",
+  },
+  {
+    name: "Fun Code Quiz",
+    description:
+      "This is a quiz with basic coding questions written with HTML, CSS, and JS. It asks 3 questions and gives you 10 seconds to answer them all. The quiz is over when all 3 questions are answered or the timer runs out.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: funquiz,
+    source_code_link: "https://github.com/JoshuaVaneps/fun-code-quiz",
+    deployed_site_link:
+      "https://joshuavaneps.github.io/fun-code-quiz/index.html",
+  },
+  {
+    name: "Super Password Generator",
+    description:
+      "This application enables users to generate random passwords based on selected criteria. It has a clean and polished, responsive user interface that adapts to multiple screen sizes.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: passwordgen,
+    source_code_link:
+      "https://github.com/JoshuaVaneps/Super-Password-Generator",
+    deployed_site_link:
+      "https://joshuavaneps.github.io/Super-Password-Generator/",
+  },
+  {
+    name: "Fun Interactive Day Planner",
+    description:
+      "This is a simple calendar application that allows a user to save events for each hour of the day. Events are saved in local storage and displayed with color-coding to indicate whether they are in the past, present, or future.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: dayplanner,
+    source_code_link:
+      "https://github.com/JoshuaVaneps/fun-interactive-day-planner",
+    deployed_site_link:
+      "https://joshuavaneps.github.io/fun-interactive-day-planner/",
   },
 ];
 

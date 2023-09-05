@@ -47,6 +47,15 @@ import fullstackDeveloper from "./icons/fullstack-developer.png";
 import reactDeveloper from "./icons/react-developer.png";
 import webDesign from "./icons/web-design.png";
 import download from "./icons/download-button.png";
+import robot from "./icons/robot.png";
+import thinking from "./icons/thinking.png";
+
+import budgetbuddy from "./websites/budgetbuddy.png";
+import dayplanner from "./websites/dayplanner.png";
+import funquiz from "./websites/funquiz.png";
+import mezcalbook from "./websites/mezcalbook.png";
+import passwordgen from "./websites/passwordgen.png";
+import weatherknight from "./websites/weatherknight.png";
 
 export {
   logo,
@@ -93,4 +102,12 @@ export {
   webDesign,
   download,
   joshResume,
+  robot,
+  thinking,
+  budgetbuddy,
+  dayplanner,
+  funquiz,
+  mezcalbook,
+  passwordgen,
+  weatherknight,
 };
