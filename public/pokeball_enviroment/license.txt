@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pokeball Enviroment
+* source:	https://sketchfab.com/3d-models/pokeball-enviroment-c9f2311335784a4c852e0f633a7a5cad
+* author:	Miparo (https://sketchfab.com/Miparo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pokeball Enviroment" (https://sketchfab.com/3d-models/pokeball-enviroment-c9f2311335784a4c852e0f633a7a5cad) by Miparo (https://sketchfab.com/Miparo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
