@@ -6,13 +6,33 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState(""); // State to track active section
-  const [toggle, setToggle] = useState(false); // State for mobile menu toggle
+  const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
       // the backticksa and temporal literal allows us to pass in our custom dynamic padding
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-superPrimary `}
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-5 fixed top-0 z-20 ${
+        scrolled ? "bg-superPrimary" : "bg-transparent"
+      } `}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -34,16 +54,16 @@ const Navbar = () => {
         {/* Desktop navigation links */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {/* were using map to make a linked dynamic nav list of our main sections */}
-          {navLinks.map((Link) => (
+          {navLinks.map((nav) => (
             // were using a key and a if else statement to check if the section is active
             <li
-              key={Link.id}
+              key={nav.id}
               className={`${
-                active === Link.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer text-center `}
-              onClick={() => setActive(Link.title)} // Set active section on click
+              onClick={() => setActive(nav.title)} // Set active section on click
             >
-              <a href={`#${Link.id}`}>{Link.title}</a>
+              <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
@@ -66,19 +86,19 @@ const Navbar = () => {
             {/* Mobile navigation links */}
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {/* were using map to make a linked dynamic nav list of our main sections */}
-              {navLinks.map((Link) => (
+              {navLinks.map((nav) => (
                 // were using a key and a if else statement to check if the section is active
                 <li
-                  key={Link.id}
+                  key={nav.id}
                   className={`${
-                    active === Link.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-white" : "text-secondary"
                   }font-poppins font-medium cursor-pointer text-[16px] bg-gradient-to-r  from-superPrimaryDark to-superPrimaryLight hover:from-superSecondary hover:to-pink-500  `}
                   onClick={() => {
                     setToggle(!toggle); // Close mobile menu
-                    setActive(Link.title); // Set active section
+                    setActive(nav.title); // Set active section
                   }}
                 >
-                  <a href={`#${Link.id}`}>{Link.title}</a>
+                  <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
