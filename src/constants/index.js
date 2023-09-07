@@ -37,6 +37,9 @@ import {
   budgetbuddy,
   mezcalbook,
   passwordgen,
+  Mike,
+  Nicole,
+  Danny,
 } from "../assets";
 
 export const navLinks = [
@@ -170,27 +173,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Josh is a digital wizard! Our website saw a 50% traffic boost after his optimization work. We were extremely grateful for his expertise.",
+    name: "Mike Pestena",
+    designation: "GM",
+    company: "The Monroe",
+    image: Mike,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "In my experience, Joshua Vaneps is a rare find in the world of web development. His dedication to our success was unmatched, and his professionalism was a breath of fresh air.",
+    name: "Nicole Peters",
+    designation: "GM",
+    company: "Good Salt Restaurant Group",
+    image: Nicole,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Working with Josh has been a revelation. He doesn't just build websites; he builds success stories",
+    name: "Daniel Delaney",
+    designation: "Manager",
+    company: "Reyes Mezcaleria",
+    image: Danny,
   },
 ];
 

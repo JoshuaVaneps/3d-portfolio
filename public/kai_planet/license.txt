@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kamisama Planet
+* source:	https://sketchfab.com/3d-models/kamisama-planet-b0c20b26815f43558b863d147ac3c709
+* author:	davidescalante (https://sketchfab.com/davidescalante)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kamisama Planet" (https://sketchfab.com/3d-models/kamisama-planet-b0c20b26815f43558b863d147ac3c709) by davidescalante (https://sketchfab.com/davidescalante) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

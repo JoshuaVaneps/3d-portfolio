@@ -1,10 +1,10 @@
 import { useState } from "react";
 import {
-  home,
-  contact,
-  portfolio,
+  house,
+  mail,
+  briefcase,
   linkedin,
-  resume,
+  clipboard,
   control,
   logoExample,
 } from "../assets";
@@ -12,10 +12,10 @@ import {
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Home", src: { home } },
-    { title: "Portfolio", src: { portfolio }, gap: true },
-    { title: "Contact ", src: { contact } },
-    { title: "Resume", src: { resume }, gap: true },
+    { title: "Home", src: { house } },
+    { title: "Portfolio", src: { briefcase }, gap: true },
+    { title: "Contact ", src: { mail } },
+    { title: "Resume", src: { clipboard }, gap: true },
     { title: "Linkedin", src: { linkedin } },
   ];
 

@@ -21,6 +21,16 @@
   display: block;
 }
 
+.error-message {
+  display: none;
+  color: #d03d56; /* Red color for error message */
+  font-size: 14px;
+}
+
+input:invalid + .error-message {
+  display: block;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

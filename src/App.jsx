@@ -21,13 +21,14 @@ const App = () => {
         <div className="bg-hero-pattern4 bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
+          <StarsCanvas />
         </div>
         <About />
         <Works />
         <Experience />
         <Tech />
         <Feedbacks />
-        <Resume />
+        <StarsCanvas />
         <div className="relative z-0 ">
           <Contact />
           <StarsCanvas />

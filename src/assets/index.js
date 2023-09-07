@@ -30,6 +30,9 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import reyes from "./company/r-logo.png";
 import goodSalt from "./company/gs-logo.png";
+import Danny from "./company/Danny.png";
+import Mike from "./company/Mike.png";
+import Nicole from "./company/Nicole.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -42,6 +45,10 @@ import portfolio from "./sidebar/portfolio.svg";
 import resume from "./sidebar/resume.svg";
 import control from "./sidebar/sidebar-control.png";
 import logoExample from "./sidebar/sidebar-logo-example.png";
+import house from "./sidebar/house.png";
+import briefcase from "./sidebar/briefcase.png";
+import clipboard from "./sidebar/clipboard.png";
+import mail from "./sidebar/mail.png";
 
 import fullstackDeveloper from "./icons/fullstack-developer.png";
 import reactDeveloper from "./icons/react-developer.png";
@@ -110,4 +117,11 @@ export {
   mezcalbook,
   passwordgen,
   weatherknight,
+  house,
+  briefcase,
+  mail,
+  clipboard,
+  Danny,
+  Mike,
+  Nicole,
 };
