@@ -11,7 +11,31 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { download, joshResume } from "../assets";
+import { technologies } from "../constants";
 
+const techBalls = ({ technologies }) => {
+  return (
+    <div className="text-teal-500">
+      {technologies.map((tech) => (
+        <span
+          key={tech.name}
+          className="p-2 cursor-pointer inline-flex items-center
+        rounded-full bg-gray-700 mx-1.5 text-xl hover:text-gray-100 hover:bg-superSecondary 
+        duration-300 "
+        >
+          <ion-tech name={tech.name}>
+            {" "}
+            <img
+              src={tech.icon}
+              alt="${tech.name}"
+              className="w-1/2 h-1/2 object-contain"
+            />
+          </ion-tech>
+        </span>
+      ))}
+    </div>
+  );
+};
 const handleClick = () => {
   // Replace 'your-pdf-file.pdf' with the actual URL or path to your PDF file
   const pdfUrl = joshResume;

@@ -16,14 +16,9 @@ import {
   figma,
   python,
   sql,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  leetCode,
+  gitHub,
+  linkedIn,
   webDesign,
   reactDeveloper,
   fullstackDeveloper,
@@ -52,12 +47,12 @@ export const navLinks = [
     title: "Portfolio",
   },
   {
-    id: "contact",
-    title: "Contact",
-  },
-  {
     id: "resume",
     title: "Resume",
+  },
+  {
+    id: "contact",
+    title: "Contact",
   },
 ];
 
@@ -120,10 +115,6 @@ const technologies = [
   {
     name: "SQL",
     icon: sql,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -349,4 +340,22 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const Icons = [
+  {
+    name: "logo-github",
+    link: "https://github.com/JoshuaVaneps",
+    image: gitHub,
+  },
+  {
+    name: "logo-linkedin",
+    link: "www.linkedin.com/in/joshua-vaneps-465949286",
+    image: linkedIn,
+  },
+  {
+    name: "logo-leetcode",
+    link: "https://leetcode.com/joshuavaneps/",
+    image: leetCode,
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, Icons };

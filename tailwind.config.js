@@ -29,6 +29,8 @@ export default {
         "hero-pattern2": "url('/src/assets/jherobg.png')",
         "hero-pattern3": "url('/src/assets/hero-swirl.png')",
         "hero-pattern4": "url('/src/assets/bhero.png')",
+        circularlight:
+          "repeating-radial-gradient(rgba(170,166,195,0.4) 2px, #054895 5px, #054895 100px)",
       },
     },
   },

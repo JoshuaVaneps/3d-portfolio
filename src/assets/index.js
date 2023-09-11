@@ -56,6 +56,9 @@ import webDesign from "./icons/web-design.png";
 import download from "./icons/download-button.png";
 import robot from "./icons/robot.png";
 import thinking from "./icons/thinking.png";
+import gitHub from "./icons/gitHub.png";
+import linkedIn from "./icons/linkedIn.png";
+import leetCode from "./icons/leetCode.png";
 
 import budgetbuddy from "./websites/budgetbuddy.png";
 import dayplanner from "./websites/dayplanner.png";
@@ -124,4 +127,7 @@ export {
   Danny,
   Mike,
   Nicole,
+  gitHub,
+  linkedIn,
+  leetCode,
 };
