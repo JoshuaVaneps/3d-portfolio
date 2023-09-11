@@ -80,7 +80,10 @@ const Contact = () => {
 
     // If all required fields are filled, hide error messages
     Object.keys(blurredFields).forEach((fieldName) => {
-      errorMessages[fieldName].style.display = "none"; // Hide error messages
+      const errorMessage = errorMessages[fieldName];
+      if (errorMessage) {
+        errorMessage.style.display = "none"; // Hide error messages
+      }
     });
 
     setLoading(true);
