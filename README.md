@@ -54,7 +54,7 @@ My portfolio utilizes the following technologies and libraries:
 ## Deployment
 
 Below you will see an image of the deployed site along with a link to demo the sight fo yourself
-Demo Site Here: [Deploy](https://joshuavaneps.github.io/)
+Demo Site Here: [Deploy](https://joshuavaneps.github.io/3d-portfolio/)
 
 ![joshuavaneps github io_3d-portfolio_](https://github.com/JoshuaVaneps/3d-portfolio/assets/111782130/ccaf8a64-6227-4eee-a912-45476e0df26c)
 
