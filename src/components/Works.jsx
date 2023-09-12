@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
@@ -17,13 +17,32 @@ const ProjectCard = ({
   deployed_site_link,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    // Check screen width on component mount and on window resize
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768); // Adjust breakpoint as needed
+    };
+
+    handleResize(); // Check on component mount
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const openDeployedSite = () => {
     window.open(deployed_site_link, "_blank");
   };
 
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      whileInView={fadeIn("up", "spring", index * 0.5, 0.75)}
+    >
       <Tilt
         options={{
           max: 45,

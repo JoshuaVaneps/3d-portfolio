@@ -52,6 +52,7 @@ const About = () => {
         {/* allows us to fade in text through 4 variables direction, type, delay, adn duration of animation */}
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
+          whileInView={fadeIn("", "", 0.1, 1)}
           className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] sm:w-full lg:w-1/2 md:w-full"
         >
           I'm Joshua Vaneps, a seasoned Full Stack Developer from Orlando, FL.
