@@ -12,6 +12,7 @@ export default {
         superPrimaryDark: "#0B3768",
         superPrimaryLight: "#0251B6",
         superSecondary: "#D03D56",
+        superHighlight: "#4B8CE1",
         secondary: "#aaa6c3",
         tertiary: "#151030",
         "black-100": "#100d25",
