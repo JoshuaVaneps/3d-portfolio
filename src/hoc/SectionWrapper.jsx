@@ -28,7 +28,7 @@ const SectionWrapper = (Component, idName) =>
           &nbsp;
           <div class="hidden lg:flex fixed flex-colum top-[30%] left-0">
             <ul>
-              <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-117px] pr-[8px] pl-[14px] hover:ml-[-10px] duration-300 bg-superHighlight">
+              <li class="w-[160px] h-[60px] flex justify-between items-center ml-[-117px] pr-[8px] pl-[14px] hover:ml-[-10px] duration-300 bg-superPrimaryLight">
                 <a
                   class="flex justify-between items-center w-full text-gray-300"
                   href="https://www.linkedin.com/in/joshua-vaneps-465949286/"
