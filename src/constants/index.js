@@ -348,7 +348,7 @@ const Icons = [
   },
   {
     name: "logo-linkedin",
-    link: "www.linkedin.com/in/joshua-vaneps-465949286",
+    link: "https://www.linkedin.com/in/joshua-vaneps-465949286/",
     image: linkedIn,
   },
   {
