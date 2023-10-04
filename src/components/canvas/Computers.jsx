@@ -5,39 +5,25 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./90s-pc/scene.gltf");
+  const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  // You can adjust the scale by modifying the x, y, and z values below
-  // computer.scene.scale.set(0.005, 0.005, 0.005);
   return (
     <mesh>
-      {/* have to add lights to the 3js */}
-      {/* hemisphere provides a general ambient light */}
-      {/* intensity is the brightness and ground color controls color coming from bottom black means none */}
-      <hemisphereLight intensity={2.15} groundColor="black" />
-      {/* point light gives a more localized light source, adding highlights and depth */}
-      <pointLight intensity={1} />
-      {/* spotlight offers directed lighting, similar to a flashlight */}
+      <hemisphereLight intensity={3.0} groundColor="black" />
       <spotLight
-        // position sets the 3D position of the light source in the scene
         position={[-20, 50, 10]}
-        // angle controls how wide or narrow the spotlight's beam is.
         angle={0.12}
-        // penumbra defines the softness of the spotlight's edge. 0 is hard edge 1 is soft edge
         penumbra={1}
-        intensity={10}
-        // Indicates that this spotlight will cast shadows in the scene.
+        intensity={8}
         castShadow
-        // Determines the resolution of the shadow. A higher value generally means sharper, better-defined shadows, but can also be more performance-intensive.
         shadow-mapSize={1024}
       />
+      <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.05 : 0.065}
-        // correspond to the object's position on the horizontal axis (left-right), vertical axis (up-down), and depth axis (forward-backward), respectively.
-        position={isMobile ? [0.6, -3, -2.2] : [0.5, -3.25, -1.5]}
-        // represents the rotation of the object (your computer model) around its x, y, and z axes:
-        rotation={[-0.0, -0.2, 0.0]}
+        scale={isMobile ? 0.7 : 0.7}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.5, -1.1]}
+        rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
@@ -89,8 +75,8 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
-        <Preload all />
       </Suspense>
+      <Preload all />
     </Canvas>
   );
 };

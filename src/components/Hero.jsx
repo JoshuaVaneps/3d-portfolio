@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I'm <span className="text-superSecondary">Joshua</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            A experienced Full Stack Developer specialized in MERN stack, with a
+            A experienced Full Stack Developer, with a
             Proven track record of optimizing workflows and delivering efficient
             web solutions.
           </p>
