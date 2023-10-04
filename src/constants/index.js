@@ -32,6 +32,7 @@ import {
   budgetbuddy,
   mezcalbook,
   passwordgen,
+  stasios,
   Mike,
   Nicole,
   Danny,
@@ -190,30 +191,52 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Weather Knight",
+    name: "Stasios Italian Deli",
     description:
-      "Weather Knight is a fun interactive weather dashboard that utilizes the Open Weather API to provide accurate and detailed weather information to its users. It is completely responsive on the web and mobile and is a blast to use.",
+      "Experience a seamless MERN website for a local Italian deli, enhanced with GraphQL. Easily browse and order delicious subs, and empower managers with a user-friendly dashboard for menu updates.",
     tags: [
       {
-        name: "html",
+        name: "GraphQL",
         color: "blue-text-gradient",
+      },
+      {
+        name: "MERN",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: stasios,
+    source_code_link: "https://github.com/NickSweet1/Stasios",
+    deployed_site_link: "https://stasios-7fcd485311cd.herokuapp.com/",
+  },
+  {
+    name: "Mezcal Information Guide",
+    description:
+      "A web-based application designed to facilitate employee access to an extensive database containing comprehensive information about mezcal spirits within a restaurant setting.",
+    tags: [
+      {
+        name: "handlebars",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "sql",
+        color: "pink-text-gradient",
       },
       {
         name: "javascript",
         color: "orange-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "API's",
-        color: "green-pink-text-gradient",
+        name: "Tailwind",
+        color: "green-text-gradient",
       },
     ],
-    image: weatherknight,
-    source_code_link: "https://github.com/joshuavaneps/weather-knight",
-    deployed_site_link: "https://joshuavaneps.github.io/weather-knight/",
+    image: mezcalbook,
+    source_code_link: "https://github.com/JoshuaVaneps/Mezcal-Book",
+    deployed_site_link: "https://mezcal-book-580ae53d198b.herokuapp.com/",
   },
   {
     name: "Budget Buddy",
@@ -242,30 +265,30 @@ const projects = [
     deployed_site_link: "https://mambrocio.github.io/group-COL/",
   },
   {
-    name: "Mezcal Information Guide",
+    name: "Weather Knight",
     description:
-      "A web-based application designed to facilitate employee access to an extensive database containing comprehensive information about mezcal spirits within a restaurant setting.",
+      "Weather Knight is a fun interactive weather dashboard that utilizes the Open Weather API to provide accurate and detailed weather information to its users. It is completely responsive on the web and mobile and is a blast to use.",
     tags: [
       {
-        name: "handlebars",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "sql",
-        color: "pink-text-gradient",
       },
       {
         name: "javascript",
         color: "orange-text-gradient",
       },
       {
-        name: "Tailwind",
-        color: "green-text-gradient",
+        name: "css",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "API's",
+        color: "green-pink-text-gradient",
       },
     ],
-    image: mezcalbook,
-    source_code_link: "https://github.com/JoshuaVaneps/Mezcal-Book",
-    deployed_site_link: "https://mezcal-book-580ae53d198b.herokuapp.com/",
+    image: weatherknight,
+    source_code_link: "https://github.com/joshuavaneps/weather-knight",
+    deployed_site_link: "https://joshuavaneps.github.io/weather-knight/",
   },
   {
     name: "Fun Code Quiz",
@@ -313,30 +336,6 @@ const projects = [
       "https://github.com/JoshuaVaneps/Super-Password-Generator",
     deployed_site_link:
       "https://joshuavaneps.github.io/Super-Password-Generator/",
-  },
-  {
-    name: "Fun Interactive Day Planner",
-    description:
-      "This is a simple calendar application that allows a user to save events for each hour of the day. Events are saved in local storage and displayed with color-coding to indicate whether they are in the past, present, or future.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: dayplanner,
-    source_code_link:
-      "https://github.com/JoshuaVaneps/fun-interactive-day-planner",
-    deployed_site_link:
-      "https://joshuavaneps.github.io/fun-interactive-day-planner/",
   },
 ];
 

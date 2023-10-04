@@ -62,6 +62,7 @@ import leetCode from "./icons/leetCode.png";
 
 import budgetbuddy from "./websites/budgetbuddy.png";
 import dayplanner from "./websites/dayplanner.png";
+import stasios from "./websites/stasios.png";
 import funquiz from "./websites/funquiz.png";
 import mezcalbook from "./websites/mezcalbook.png";
 import passwordgen from "./websites/passwordgen.png";
@@ -122,6 +123,7 @@ export {
   mezcalbook,
   passwordgen,
   weatherknight,
+  stasios,
   house,
   briefcase,
   mail,
