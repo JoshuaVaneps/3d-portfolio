@@ -26,16 +26,15 @@ import {
   thinking,
   goodSalt,
   reyes,
-  dayplanner,
   weatherknight,
   funquiz,
   budgetbuddy,
   mezcalbook,
-  passwordgen,
   stasios,
   Mike,
   Nicole,
   Danny,
+  summario,
 } from "../assets";
 
 export const navLinks = [
@@ -239,6 +238,28 @@ const projects = [
     deployed_site_link: "https://mezcal-book-580ae53d198b.herokuapp.com/",
   },
   {
+    name: "Summario",
+    description:
+      "Welcome to Summario, an article summarizer that simplifies the way you consume content. Summario leverages the power of OpenAI through RAPID API to generate concise and informative summaries from lengthy articles, helping you save time and get to the heart of the content quickly.",
+    tags: [
+      {
+        name: "AI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "API",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: summario,
+    source_code_link: "https://github.com/JoshuaVaneps/GPT-Summarizer",
+    deployed_site_link: "https://incandescent-bonbon-7a8f55.netlify.app/",
+  },
+  {
     name: "Budget Buddy",
     description:
       "Budget Buddy is a place where everyone will be presented with the opportunity to understand the financial implications of their chosen location and can confidently navigate their financial journey, creating a solid foundation for a secure future.",
@@ -312,30 +333,6 @@ const projects = [
     source_code_link: "https://github.com/JoshuaVaneps/fun-code-quiz",
     deployed_site_link:
       "https://joshuavaneps.github.io/fun-code-quiz/index.html",
-  },
-  {
-    name: "Super Password Generator",
-    description:
-      "This application enables users to generate random passwords based on selected criteria. It has a clean and polished, responsive user interface that adapts to multiple screen sizes.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: passwordgen,
-    source_code_link:
-      "https://github.com/JoshuaVaneps/Super-Password-Generator",
-    deployed_site_link:
-      "https://joshuavaneps.github.io/Super-Password-Generator/",
   },
 ];
 
