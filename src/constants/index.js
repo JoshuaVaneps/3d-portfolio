@@ -212,7 +212,7 @@ const projects = [
     deployed_site_link: "https://stasios-7fcd485311cd.herokuapp.com/",
   },
   {
-    name: "Mezcal Information Guide",
+    name: "Good Salt Inventory",
     description:
       "A web-based application designed to facilitate employee access to an extensive database containing comprehensive information about mezcal spirits within a restaurant setting.",
     tags: [
@@ -238,9 +238,9 @@ const projects = [
     deployed_site_link: "https://mezcal-book-580ae53d198b.herokuapp.com/",
   },
   {
-    name: "Summario",
+    name: "Summario AI Summary",
     description:
-      "Welcome to Summario, an article summarizer that simplifies the way you consume content. Summario leverages the power of OpenAI through RAPID API to generate concise and informative summaries from lengthy articles, helping you save time and get to the heart of the content quickly.",
+      "Summario simplifies content consumption by using OpenAI's RAPID API to generate clear and concise article summaries, saving you time and providing quick insights.",
     tags: [
       {
         name: "AI",
