@@ -66,7 +66,7 @@ import stasios from "./websites/stasios.png";
 import funquiz from "./websites/funquiz.png";
 import mezcalbook from "./websites/mezcalbook.png";
 import passwordgen from "./websites/passwordgen.png";
-import summario from "../../../GPT-Summarizer/src/assets";
+import summario from "./websites/summario.png";
 import weatherknight from "./websites/weatherknight.png";
 import josh from "./josh-profile.jpg";
 
