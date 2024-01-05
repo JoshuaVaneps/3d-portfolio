@@ -19,15 +19,14 @@ const Hero = () => {
             Hi, I'm <span className="text-superSecondary">Joshua</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            A experienced Full Stack Developer, with a
-            Proven track record of optimizing workflows and delivering efficient
-            web solutions.
+            A experienced Full Stack Developer, with a Proven track record of
+            optimizing workflows and delivering efficient web solutions.
           </p>
         </div>
       </div>
 
       <ComputersCanvas />
-      <div className="absolute xs:bottom-10 bottomn-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-10 bottomn-32 w-full flex justify-center items-center z-20">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.dev
@@ -37,7 +36,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              className="w-4 h-4 md:w-3 md:h-3 rounded-full bg-secondary mb-1 "
             />
           </div>
         </a>

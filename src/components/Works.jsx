@@ -17,7 +17,7 @@ const ProjectCard = ({
   deployed_site_link,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     // Check screen width on component mount and on window resize
@@ -40,8 +40,8 @@ const ProjectCard = ({
 
   return (
     <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      whileInView={fadeIn("up", "spring", index * 0.5, 0.75)}
+      variants={isDesktop ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}
+      whileInView={isDesktop ? fadeIn("up", "spring", index * 0.5, 0.75) : {}}
     >
       <Tilt
         options={{
@@ -132,16 +132,33 @@ const buttonHoverStyle = {
 };
 
 const Works = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    // Check screen width on component mount and on window resize
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768); // Adjust breakpoint as needed
+    };
+
+    handleResize(); // Check on component mount
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={isDesktop ? textVariant() : {}}>
         <p className={styles.sectionSubText}>Check Out My Work</p>
         <h2 className={styles.sectionHeadText}>Portfolio</h2>
       </motion.div>
-      <div className="w-full flex">
+      <div className="w-full flex z-20">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          variants={isDesktop ? fadeIn("", "", 0.1, 1) : {}}
         >
           The following projects serve as a testament to my skills and
           expertise, offering tangible demonstrations of my capabilities in
